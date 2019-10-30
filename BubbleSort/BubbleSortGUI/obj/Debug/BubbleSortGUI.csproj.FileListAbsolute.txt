@@ -1,0 +1,10 @@
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\bin\Debug\BubbleSortGUI.exe.config
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\bin\Debug\BubbleSortGUI.exe
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\bin\Debug\BubbleSortGUI.pdb
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.csprojAssemblyReference.cache
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.Form1.resources
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.Properties.Resources.resources
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.csproj.GenerateResource.cache
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.csproj.CoreCompileInputs.cache
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.exe
+D:\Projects\Exercies\BubbleSort\BubbleSortGUI\obj\Debug\BubbleSortGUI.pdb
