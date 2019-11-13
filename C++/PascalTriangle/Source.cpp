@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Using the Binominal Coeff formula we can get the numerical coefficient
+//Using the Binominal coeff formula we can get the numerical coefficient
 int binominalCoeff(int n, int k){
     int res = 1;
     if(k > n - k)
