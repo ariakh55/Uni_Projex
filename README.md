@@ -1,6 +1,6 @@
-#Projects
-###as you see the name
+# Projects
+### as you see the name
 
-###by myself *no kidding*
+### by myself *no kidding*
 
 Just enjoy it :D
