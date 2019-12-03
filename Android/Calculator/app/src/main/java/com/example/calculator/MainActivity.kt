@@ -23,10 +23,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var btn8 : Button
     lateinit var btn9 : Button
     lateinit var btnDot : Button
-    lateinit var btnPlusMinus : Button
     lateinit var btnClear : Button
-    lateinit var btnPtn : Button
-    lateinit var btnPer : Button
     lateinit var btnDiv : Button
     lateinit var btnMult : Button
     lateinit var btnMinus : Button
@@ -34,6 +31,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var btnRes : Button
     lateinit var textRes : TextView
 
+    val calc = Clac()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,10 +52,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn8 = findViewById(R.id.btn8)
         btn9 = findViewById(R.id.btn9)
         btnDot = findViewById(R.id.btnDot)
-        btnPlusMinus = findViewById(R.id.btnPlusMinus)
         btnClear = findViewById(R.id.btnClear)
-        btnPtn = findViewById(R.id.btnPtn)
-        btnPer = findViewById(R.id.btnPercent)
         btnDiv = findViewById(R.id.btnDiv)
         btnRes = findViewById(R.id.btnRes)
         btnMult = findViewById(R.id.btnMult)
@@ -77,10 +72,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn9.setOnClickListener(this)
         btnDot.setOnClickListener(this)
         btnRes.setOnClickListener(this)
-        btnPlusMinus.setOnClickListener(this)
         btnClear.setOnClickListener(this)
-        btnPtn.setOnClickListener(this)
-        btnPer.setOnClickListener(this)
         btnDiv.setOnClickListener(this)
         btnMult.setOnClickListener(this)
         btnPlus.setOnClickListener(this)
@@ -88,28 +80,24 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        /*when(v){
-            btn0->{}
-            btn1->{}
-            btn2->{}
-            btn3->{}
-            btn4->{}
-            btn5->{}
-            btn6->{}
-            btn7->{}
-            btn8->{}
-            btn9->{}
-            btnDot->{}
-            btnPlusMinus->{}
-            btnClear->{}
-            btnPtn->{}
-            btnPer->{}
-            btnDiv->{}
-            btnMinus->{}
-            btnPlus->{}
-            btnMult->{}
-            btnRes->{}
-        //Don't Pay Attention!! It is not completed yet
-        }*/
+        when(v){
+            btn0->calc.getNumber(0)
+            btn1->calc.getNumber(1)
+            btn2->calc.getNumber(2)
+            btn3->calc.getNumber(3)
+            btn4->calc.getNumber(4)
+            btn5->calc.getNumber(5)
+            btn6->calc.getNumber(6)
+            btn7->calc.getNumber(7)
+            btn8->calc.getNumber(8)
+            btn9->calc.getNumber(9)
+            btnDot->calc.getNumber(".")
+            btnClear->calc.clear()
+            btnDiv->calc.getOperat("/")
+            btnMinus->calc.getOperat("-")
+            btnPlus->calc.getOperat("+")
+            btnMult->calc.getOperat("*")
+            btnRes->calc.showRes()
+        }
     }
 }
