@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v){
+        /*when(v){
             btn0->{}
             btn1->{}
             btn2->{}
@@ -109,6 +109,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             btnPlus->{}
             btnMult->{}
             btnRes->{}
-        }
+        //Don't Pay Attention!! It is not completed yet
+        }*/
     }
 }
