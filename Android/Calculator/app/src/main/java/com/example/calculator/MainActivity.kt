@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var textRes : TextView
 
     val calc = Clac()
+    var check: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,24 +81,86 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        var temp: String = textRes.text.toString()
         when(v){
-            btn0->calc.getNumber(0)
-            btn1->calc.getNumber(1)
-            btn2->calc.getNumber(2)
-            btn3->calc.getNumber(3)
-            btn4->calc.getNumber(4)
-            btn5->calc.getNumber(5)
-            btn6->calc.getNumber(6)
-            btn7->calc.getNumber(7)
-            btn8->calc.getNumber(8)
-            btn9->calc.getNumber(9)
-            btnDot->calc.getNumber(".")
-            btnClear->calc.clear()
-            btnDiv->calc.getOperat("/")
-            btnMinus->calc.getOperat("-")
-            btnPlus->calc.getOperat("+")
-            btnMult->calc.getOperat("*")
-            btnRes->calc.showRes()
+            btn0->{
+                calc.getNumber(0,check)
+                textRes.text = temp + "0"
+            }
+            btn1->{
+                calc.getNumber(1,check)
+                textRes.text = temp + "1"
+            }
+            btn2->{
+                calc.getNumber(2,check)
+                textRes.text = temp + "2"
+            }
+            btn3->{
+                calc.getNumber(3,check)
+                textRes.text = temp + "3"
+            }
+            btn4->{
+                calc.getNumber(4,check)
+                textRes.text = temp + "4"
+            }
+            btn5->{
+                calc.getNumber(5,check)
+                textRes.text = temp + "5"
+            }
+            btn6->{
+                calc.getNumber(6,check)
+                textRes.text = temp + "6"
+            }
+            btn7->{
+                calc.getNumber(7,check)
+                textRes.text = temp + "7"
+            }
+            btn8->{
+                calc.getNumber(8,check)
+                textRes.text = temp + "8"
+            }
+            btn9->{
+                calc.getNumber(9,check)
+                textRes.text = temp + "9"
+            }
+            btnDot->{
+                calc.getNumber(".",check)
+                textRes.text = temp + "."
+            }
+            btnClear->{
+                calc.clear()
+                textRes.text=""
+                check=false
+            }
+            btnDiv->{
+                calc.getOperat("÷")
+                check=true
+                textRes.text=""
+            }
+            btnMinus->{
+                calc.getOperat("-")
+                check=true
+                textRes.text=""
+            }
+            btnPlus->{
+                calc.getOperat("+")
+                check=true
+                textRes.text=""
+            }
+            btnMult->{
+                calc.getOperat("×")
+                check=true
+                textRes.text=""
+            }
+            btnRes->{
+                textRes.text = calc.showRes().toString()
+                if(textRes.text != "Cannot Div By Zero")
+                    calc.getNumber(calc.showRes())
+                else{
+                    calc.clear()
+                    check=false
+                }
+            }
         }
     }
 }
