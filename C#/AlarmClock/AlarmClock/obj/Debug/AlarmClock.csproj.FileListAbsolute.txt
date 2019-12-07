@@ -1,0 +1,16 @@
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\bin\Debug\Alarm.mp3
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\bin\Debug\AlarmClock.exe.config
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\bin\Debug\AlarmClock.exe
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\bin\Debug\AlarmClock.pdb
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.csprojAssemblyReference.cache
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\Interop.WMPLib.dll
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.csproj.ResolveComReference.cache
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.MainFrm.resources
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.Properties.Resources.resources
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.UserControls.Clock.resources
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.csproj.GenerateResource.cache
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.csproj.CoreCompileInputs.cache
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.exe
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.pdb
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.UserControls.Stopwatch.resources
+D:\Projects\Exercies\Uni_Projex\C#\AlarmClock\AlarmClock\obj\Debug\AlarmClock.UserControls.Chornometer.resources
