@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var btn9 : Button
     lateinit var btnDot : Button
     lateinit var btnClear : Button
+    lateinit var btnBack : Button
     lateinit var btnDiv : Button
     lateinit var btnMult : Button
     lateinit var btnMinus : Button
@@ -32,7 +33,6 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var textRes : TextView
 
     val calc = Clac()
-    var check: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
 
-    fun init(){
+    fun init() {
         btn0 = findViewById(R.id.btn0)
         btn1 = findViewById(R.id.btn1)
         btn2 = findViewById(R.id.btn2)
@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btnMult = findViewById(R.id.btnMult)
         btnPlus = findViewById(R.id.btnPlus)
         btnMinus = findViewById(R.id.btnMinus)
+        btnBack = findViewById(R.id.btnBack)
         textRes = findViewById(R.id.textRes)
 
         btn0.setOnClickListener(this)
@@ -78,88 +79,59 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btnMult.setOnClickListener(this)
         btnPlus.setOnClickListener(this)
         btnMinus.setOnClickListener(this)
+        btnBack.setOnClickListener(this)
+        calc.init_res(textRes)
     }
 
+    var DOTCHECK = false
+
     override fun onClick(v: View?) {
-        var temp: String = textRes.text.toString()
-        when(v){
-            btn0->{
-                calc.getNumber(0,check)
-                textRes.text = temp + "0"
+        when(v?.id){
+            R.id.btnBack -> {
+                if(textRes.text.length>0 && textRes.text[textRes.text.length-1]=='.')
+                    DOTCHECK = false
+                calc.backspace()
             }
-            btn1->{
-                calc.getNumber(1,check)
-                textRes.text = temp + "1"
+            R.id.btn0 -> calc.getNumber("0")
+            R.id.btn1 -> calc.getNumber("1")
+            R.id.btn2 -> calc.getNumber("2")
+            R.id.btn3 -> calc.getNumber("3")
+            R.id.btn4 -> calc.getNumber("4")
+            R.id.btn5 -> calc.getNumber("5")
+            R.id.btn6 -> calc.getNumber("6")
+            R.id.btn7 -> calc.getNumber("7")
+            R.id.btn8 -> calc.getNumber("8")
+            R.id.btn9 -> calc.getNumber("9")
+            R.id.btnDot -> {
+                if(!DOTCHECK){
+                    calc.getNumber(".")
+                    DOTCHECK=true
+                }else
+                    return
             }
-            btn2->{
-                calc.getNumber(2,check)
-                textRes.text = temp + "2"
+            R.id.btnPlus ->{
+                calc.getOperator("+")
+                DOTCHECK=false
             }
-            btn3->{
-                calc.getNumber(3,check)
-                textRes.text = temp + "3"
+            R.id.btnMinus -> {
+                calc.getOperator("-")
+                DOTCHECK=false
             }
-            btn4->{
-                calc.getNumber(4,check)
-                textRes.text = temp + "4"
+            R.id.btnDiv -> {
+                calc.getOperator("/")
+                DOTCHECK=false
             }
-            btn5->{
-                calc.getNumber(5,check)
-                textRes.text = temp + "5"
+            R.id.btnMult -> {
+                calc.getOperator("*")
+                DOTCHECK=false
             }
-            btn6->{
-                calc.getNumber(6,check)
-                textRes.text = temp + "6"
+            R.id.btnRes -> {
+                calc.equal()
+                DOTCHECK=false
             }
-            btn7->{
-                calc.getNumber(7,check)
-                textRes.text = temp + "7"
-            }
-            btn8->{
-                calc.getNumber(8,check)
-                textRes.text = temp + "8"
-            }
-            btn9->{
-                calc.getNumber(9,check)
-                textRes.text = temp + "9"
-            }
-            btnDot->{
-                calc.getNumber(".",check)
-                textRes.text = temp + "."
-            }
-            btnClear->{
+            R.id.btnClear -> {
                 calc.clear()
-                textRes.text=""
-                check=false
-            }
-            btnDiv->{
-                calc.getOperat("÷")
-                check=true
-                textRes.text=""
-            }
-            btnMinus->{
-                calc.getOperat("-")
-                check=true
-                textRes.text=""
-            }
-            btnPlus->{
-                calc.getOperat("+")
-                check=true
-                textRes.text=""
-            }
-            btnMult->{
-                calc.getOperat("×")
-                check=true
-                textRes.text=""
-            }
-            btnRes->{
-                textRes.text = calc.showRes().toString()
-                if(textRes.text != "Cannot Div By Zero")
-                    calc.getNumber(calc.showRes())
-                else{
-                    calc.clear()
-                    check=false
-                }
+                DOTCHECK=false
             }
         }
     }
