@@ -1,0 +1,10 @@
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\bin\Debug\RaceCar.exe.config
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\bin\Debug\RaceCar.exe
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\bin\Debug\RaceCar.pdb
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.csprojAssemblyReference.cache
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.Form1.resources
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.Properties.Resources.resources
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.csproj.GenerateResource.cache
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.csproj.CoreCompileInputs.cache
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.exe
+D:\Projects\Exercies\Uni_Projex\C#\RaceCar\RaceCar\obj\Debug\RaceCar.pdb
