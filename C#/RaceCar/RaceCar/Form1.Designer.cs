@@ -96,7 +96,7 @@
             // Car
             // 
             this.Car.BackColor = System.Drawing.Color.Blue;
-            this.Car.Location = new System.Drawing.Point(80, 416);
+            this.Car.Location = new System.Drawing.Point(80, 420);
             this.Car.Name = "Car";
             this.Car.Size = new System.Drawing.Size(80, 120);
             this.Car.TabIndex = 4;

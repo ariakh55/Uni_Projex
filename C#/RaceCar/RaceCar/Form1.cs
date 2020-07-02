@@ -117,9 +117,10 @@ namespace RaceCar
                 btnStartPause.Text = "Start";
                 MessageBox.Show("oh no!");
                 listScores.Items.Add(string.Format("Player{0}\tScore:{1}", playercounter, score));
-                File.AppendAllText(@"Leaderboard.txt", listScores.Items[playercounter - 1].ToString());
+                File.AppendAllText(@"Leaderboard.txt", listScores.Items[playercounter - 1]+"\n\r");
                 score = 0;
                 Enemy.Top = -120;
+                Car.Left = 80;
             }
         }
 
@@ -148,6 +149,7 @@ namespace RaceCar
                 timerStreet.Stop();
                 timerEnemy.Stop();
             }
+            this.Focus();
             btnStartPause.Text = (isPaused) ? "Start" : "Pause";
         }
 
